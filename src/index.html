@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+<nav class=" wrapper flex items-center justify-between gap-8   py-6">
+    <div class="flex items-center gap-8 w-full 2md:w-fit justify-between">
+    <div class=" w-[120px] sm:w-[156px]"> 
+        <img class="w-full" src="./assets/Logo.svg" alt="logo"/>
+    </div>
+    <div id="menu-toggle" class=" block 2md:hidden">
+        <i class="material-icons">menu</i>
+    </div>
+</div>
+  
+   <div  id="menu"class="  2md:flex  items-center w-full justify-between flex-col  2md:flex-row absolute top-[80px] bg-white  px-10 py-3 left-0 shadow 2md:shadow-none 2md:p-0 2md:static"> 
+     <ul class="2md:flex gap-8 flex-col 2md:flex-row">
+    <li><a class=" text-primary_text  font-medium capitalize"  href="">Company</a></li>
+    <li><a class=" text-primary_text  font-medium capitalize" href="">Marketplace</a></li>
+    <li><a class=" text-primary_text  font-medium capitalize"  href="">Features</a></li>
+    <li><a class=" text-primary_text  font-medium capitalize"  href="">Team</a></li>
+    <li><a  class=" text-primary_text  font-medium capitalize" href="">Contact</a></li>
+
+ </ul> <div class="2md:flex  gap-8 items-center ">
+    <a href="" class=" capitalize  text-primary_text">log in </a>
+    <a href="" class=" capitalize bg-primary text-white rounded-lg py-2 px-3">get started </a>
+</div></div>
+</nav>
+<header class="wrapper py-16">
+    <div class="flex flex-col 2md:flex-row gap:24 items-center justify-between">
+        <div class="w-full 2md:w-[50%]"> 
+            <h1 class=" text-primary_text text-4xl mb-6 font-black 2md:text-6xl">Building digital products & brands.</h1>
+            <p class=" text-secondery_text  text-xl">Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            <div class="flex mt-10 gap-4">
+                <button class="button py-3 px-3">Start 30 day free trial</button>
+            <button class="px-3 py-3 border rounded-lg border-[#E5E7EB]">Pricing & FAQ</button>
+            </div>
+        </div>
+        <div class="w-full 2md:w-[45%]"><img class="w-full" src="./assets/marketing-strategy 1.svg" alt=""/>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 2md:grid-cols-3 xl:grid-cols-6 gap-3">
+        <img src="./assets/Google.svg" alt=""/>
+        <img src="./assets/Microsoft.svg" alt=""/>
+        <img src="./assets/Spotify.svg" alt=""/>
+        <img src="./assets/Mailchimp.svg" alt=""/>
+        <img src="./assets/Airbnb.svg" alt=""/>
+        <img src="./assets/uber.svg" alt=""/>
+    </div>
+    
+</header>
+<main>
+    <section class=" bg-secondery pt-24">
+    <div class="wrapper grid grid-cols-1 lg:grid-cols-2 items-center gap-[74px] justify-center ">
+        <div>
+            <h2 class=" leading-tight text-primary_text text-4xl font-extrabold mb-4">Work with tools you already use</h2>
+            <p class="text-secondery_text mb-8 text-xl">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
+       <div class=" w-full h-[1px] bg-[#E5E7EB]"></div>
+       <ul class="mt-8 flex flex-col gap-4">
+        <li class="flex gap-2"><img src="./assets/check-circle.svg"/> <span>integration and deployment</span></li>
+        <li class="flex gap-2"><img src="./assets/check-circle.svg"/> <span>Development workflow</span></li>
+        <li class="flex gap-2"><img src="./assets/check-circle.svg"/> <span>Knowledge management</span></li>
+    </ul>
+    <p class="text-secondery_text text-xl mt-6">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</p>
+    </div>
+    <div><img src="./assets/features-1 1.svg"/></div>
+</section>
+</main>
+</body>
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    if (menu.classList.contains("hidden")) {
+    menuToggle.innerHTML = `<i class="material-icons">menu</i>`;
+    } else {
+    menuToggle.innerHTML = `<i class="material-icons">close</i>`;
+    }});
+</script>
+</html>
