@@ -7,6 +7,15 @@
 html,body{
     font-family: Inter;
 }
+@layer base{
+    h2 {
+        @apply font-extrabold leading-normal text-gray-900 text-4xl;
+    }
+    h3{
+     
+    }
+    
+}
 @layer components{
     .wrapper{
         @apply max-w-[1280px] m-auto w-[90%];
@@ -14,4 +23,14 @@ html,body{
     .button{
         @apply bg-primary text-white rounded-lg
     }
+    .divider{
+        @apply w-full h-[1px] bg-[#E5E7EB];
+    }.heading{   
+        @apply text-2xl font-extrabold leading-normal text-[#111928]}
 }
+/* 
+@layer utilities{
+    .none{
+        display: none;
+    }
+} */
